@@ -1,8 +1,15 @@
 # How to create a context menu for field values
 
 
-<p>This example shows how to add custom items to the context menu displayed when an end user right-clicks a filed value. Two menu items are added: 'Copy Value' and 'Filter By Value'.<br><br><strong>See Also: </strong><br><a href="https://www.devexpress.com/Support/Center/p/E20028">E20028: How to provide custom menu items to allow SummaryType and SummaryDisplayType runtime selection for a specific Data Field</a></p>
+This example shows how to modify context menu for the Field and Data areas in the PivotGridControl.
 
-<br/>
+**Field area** context menu contains two new items. One command enables the end-user to exclude all fields but the one which is hovered over. Another command copies the filed name to the clipboard.
+
+![](~/images/FieldAreaCustomMenu.png)
+
+**Data area** context menu conatins a command which enables the end-user to copy cell content to the clipboard.
+
+![](~/images/DataAreaCustomMenu.png)
+
 
 

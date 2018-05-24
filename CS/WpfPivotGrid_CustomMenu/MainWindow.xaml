@@ -23,7 +23,7 @@
             <dxpg:PivotGridControl.FieldValueMenuCustomizations>
                 <dxb:BarButtonItem Name="CopyFieldElementData" Content="Copy Field Element Value" 
                                            ItemClick="CopyFieldElementData_ItemClick"/>
-                <dxb:BarButtonItem Name="FilterVFieldElementData" Content="Filter By Field Element" 
+                <dxb:BarButtonItem Name="FilterFieldElementData" Content="Filter By Field Element" 
                                            ItemClick="FilterFieldElementData_ItemClick"/>
             </dxpg:PivotGridControl.FieldValueMenuCustomizations>
             <dxpg:PivotGridControl.CellMenuCustomizations>
