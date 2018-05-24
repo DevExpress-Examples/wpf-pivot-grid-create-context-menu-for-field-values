@@ -1,4 +1,4 @@
-# How to create a context menu for field values
+# How to modify a context menu for PivotGrid areas
 
 
 This example shows how to modify context menu for the Field and Data areas in the PivotGridControl.
