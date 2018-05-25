@@ -7,30 +7,55 @@
     xmlns:local="clr-namespace:WpfPivotGrid_CustomMenu"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
-    Width="525"
-    Height="350"
+    Width="800"
+    Height="500"
     mc:Ignorable="d"
     Loaded="Window_Loaded"
     Title="MainWindow">
 
     <Grid>
-        <dxpg:PivotGridControl Name="pivotGrid" RowTreeWidth="150">
-            <dxpg:PivotGridControl.Fields>
-                <dxpg:PivotGridField Area="RowArea" FieldName="Name" />
-                <dxpg:PivotGridField Area="ColumnArea" FieldName="Type" />
-                <dxpg:PivotGridField Area="DataArea" FieldName="Value" />
-            </dxpg:PivotGridControl.Fields>
-            <dxpg:PivotGridControl.FieldValueMenuCustomizations>
-                <dxb:BarButtonItem Name="CopyFieldElementData" Content="Copy Field Element Value" 
+        <dxb:BarManager Name="barManager">
+            <dxb:BarManager.Items>
+                <dxb:BarCheckItem Name="ShowColumnGrandTotals"
+                              IsChecked="{Binding ElementName=pivotGrid, Path=ShowColumnGrandTotals, Mode=TwoWay}"
+                              Content="Show Column Grand Totals" />
+            </dxb:BarManager.Items>
+            <dxpg:PivotGridControl Name="pivotGrid" RowTreeWidth="130">
+                <dxpg:PivotGridControl.Fields>
+                    <dxpg:PivotGridField Area="RowArea" FieldName="Name" />
+                    <dxpg:PivotGridField Area="RowArea" FieldName="Owner" />
+                    <dxpg:PivotGridField Area="ColumnArea" FieldName="Type" />
+                    <dxpg:PivotGridField Area="DataArea" FieldName="Value" />
+                    <dxpg:PivotGridField Area="DataArea" FieldName="Target" />
+                </dxpg:PivotGridControl.Fields>
+                <dxpg:PivotGridControl.FieldValueMenuCustomizations>
+                    <dxb:BarButtonItem Name="CopyFieldElementData" Content="Copy Field Element Value" 
                                            ItemClick="CopyFieldElementData_ItemClick"/>
-                <dxb:BarButtonItem Name="FilterFieldElementData" Content="Filter By Field Element" 
+                    <dxb:BarButtonItem Name="FilterFieldElementData" Content="Filter By Field Element" 
                                            ItemClick="FilterFieldElementData_ItemClick"/>
-            </dxpg:PivotGridControl.FieldValueMenuCustomizations>
-            <dxpg:PivotGridControl.CellMenuCustomizations>
-                <dxb:BarButtonItem Name="CopyCellElementData" Content="Copy Cell Data" 
+                </dxpg:PivotGridControl.FieldValueMenuCustomizations>
+                <dxpg:PivotGridControl.CellMenuCustomizations>
+                    <dxb:BarButtonItem Name="CopyCellElementData" Content="Copy Cell Data" 
                                            ItemClick="CopyCellElementData_ItemClick"/>
-            </dxpg:PivotGridControl.CellMenuCustomizations>
-        </dxpg:PivotGridControl>
+                </dxpg:PivotGridControl.CellMenuCustomizations>
+                <dxpg:PivotGridControl.HeaderMenuCustomizations>
+                    <dxb:RemoveBarItemAndLinkAction 
+                    ItemName="{x:Static dxpg:DefaultMenuItemNames.FieldOrder}" />
+                </dxpg:PivotGridControl.HeaderMenuCustomizations>
+                <dxpg:PivotGridControl.HeaderAreaMenuCustomizations >
+                    <dxb:BarItemSeparator/>
+                    <dxb:BarSubItem Content="Totals">
+                        <dxb:BarSubItem.ItemLinks>
+                            <dxb:BarCheckItemLink BarItemName="ShowColumnGrandTotals" />
+                        </dxb:BarSubItem.ItemLinks>
+                    </dxb:BarSubItem>
+                    <dxb:RemoveBarItemAndLinkAction ItemName="ItemShowPrefilter" />
+                    <dxb:RemoveBarItemAndLinkAction ItemName="ItemHidePrefilter" />
+                    <dxb:RemoveBarItemAndLinkAction ItemName="ItemRefreshData" />
+                    <dxb:RemoveBarItemAndLinkAction ItemName="ItemShowFieldList" />
+                </dxpg:PivotGridControl.HeaderAreaMenuCustomizations>
+            </dxpg:PivotGridControl>
+        </dxb:BarManager>
     </Grid>
 
 </Window>
