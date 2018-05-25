@@ -1,0 +1,36 @@
+﻿<Window
+    x:Class="WpfPivotGrid_CustomMenu.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dxpg="http://schemas.devexpress.com/winfx/2008/xaml/pivotgrid"
+    xmlns:local="clr-namespace:WpfPivotGrid_CustomMenu"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+    Width="525"
+    Height="350"
+    mc:Ignorable="d"
+    Loaded="Window_Loaded"
+    Title="MainWindow">
+
+    <Grid>
+        <dxpg:PivotGridControl Name="pivotGrid" RowTreeWidth="150">
+            <dxpg:PivotGridControl.Fields>
+                <dxpg:PivotGridField Area="RowArea" FieldName="Name" />
+                <dxpg:PivotGridField Area="ColumnArea" FieldName="Type" />
+                <dxpg:PivotGridField Area="DataArea" FieldName="Value" />
+            </dxpg:PivotGridControl.Fields>
+            <dxpg:PivotGridControl.FieldValueMenuCustomizations>
+                <dxb:BarButtonItem Name="CopyFieldElementData" Content="Copy Field Element Value" 
+                                           ItemClick="CopyFieldElementData_ItemClick"/>
+                <dxb:BarButtonItem Name="FilterFieldElementData" Content="Filter By Field Element" 
+                                           ItemClick="FilterFieldElementData_ItemClick"/>
+            </dxpg:PivotGridControl.FieldValueMenuCustomizations>
+            <dxpg:PivotGridControl.CellMenuCustomizations>
+                <dxb:BarButtonItem Name="CopyCellElementData" Content="Copy Cell Data" 
+                                           ItemClick="CopyCellElementData_ItemClick"/>
+            </dxpg:PivotGridControl.CellMenuCustomizations>
+        </dxpg:PivotGridControl>
+    </Grid>
+
+</Window>
