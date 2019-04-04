@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [MainWindow.xaml](./CS/CreateValueContextMenu/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/CreateValueContextMenu/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/CreateValueContextMenu/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/CreateValueContextMenu/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/CreateValueContextMenu/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/CreateValueContextMenu/MainWindow.xaml.vb))
 <!-- default file list end -->
 # How to create a context menu for field values
 
