@@ -11,7 +11,7 @@
     Height="500"
     mc:Ignorable="d"
     Loaded="Window_Loaded"
-    Title="MainWindow">
+    Title="Context Menu Customization">
 
     <Grid>
         <dxb:BarManager Name="barManager">
