@@ -9,7 +9,7 @@ The [Data Area](https://docs.devexpress.com/WPF/7987) context menu contains a co
 
 The [Field Header Context Menu](https://docs.devexpress.com/WPF/7994) is modified to remove a command which reorders fields.
 
-The [Header Area Context Menu](https://docs.devexpress.com/WPF/8003) context menu is modified to remove all built-in commands and add a drop-down menu with a single item that shows/hides column [grand totals](https://docs.devexpress.com/WPF/8057).
+The [Header Area Context Menu](https://docs.devexpress.com/WPF/8003) is modified to remove all built-in commands and add a drop-down menu with a single item that shows/hides column [grand totals](https://docs.devexpress.com/WPF/8057).
 
 ![screenshot](images/ContextMenu.gif)
 
