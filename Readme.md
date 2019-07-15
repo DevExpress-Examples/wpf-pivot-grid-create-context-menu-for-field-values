@@ -1,15 +1,15 @@
-# How to modify a context menu for PivotGrid areas
+# How to Customize the Pivot Grid Context Menu
 
 
 This example shows how to modify context menu for the Field, Data and Header areas in the PivotGridControl.
 
-**Field area** context menu contains two new items. One command enables the end-user to exclude all fields but the one which is hovered over. Another command copies the filed name to the clipboard.
+The [Field Value Context Menu](https://docs.devexpress.com/WPF/7996) contains two new items. One command enables the end-user to exclude all fields but the one which is hovered over. Another command copies the field name to the clipboard.
 
-**Data area** context menu conatins a command which enables the end-user to copy cell content to the clipboard.
+The [Data Area](https://docs.devexpress.com/WPF/7987) context menu contains a command that copies cell content to the clipboard.
 
-**Field Header** context menu is modified to remove a command which reorders fields.
+The [Field Header Context Menu](https://docs.devexpress.com/WPF/7994) is modified to remove a command which reorders fields.
 
-**Headers Area** context menu is modified to remove all built-in commands and add a drop-down menu with a single item which enables the end-user to show/hide column grand totals.
+The [Header Area Context Menu](https://docs.devexpress.com/WPF/8003) context menu is modified to remove all built-in commands and add a drop-down menu with a single item that shows/hides column [grand totals](https://docs.devexpress.com/WPF/8057).
 
 ![screenshot](images/ContextMenu.gif)
 
@@ -25,3 +25,7 @@ API in this example:
 * [CellElementData](https://docs.devexpress.com/WPF/DevExpress.Xpf.PivotGrid.CellElementData) class
 * [PivotGridField](https://docs.devexpress.com/WPF/DevExpress.Xpf.PivotGrid.PivotGridField) class
 * [PivotGridField.FilterValues](https://docs.devexpress.com/WPF/DevExpress.Xpf.PivotGrid.PivotGridField.FilterValues) property
+
+See also:
+
+* [How to Customize the Data Field Menu to Add a Command to Change the Summary Type](https://github.com/DevExpress-Examples/how-to-customize-the-data-field-menu-to-allow-summarytype-and-summarydisplaytype-selection-e20028)

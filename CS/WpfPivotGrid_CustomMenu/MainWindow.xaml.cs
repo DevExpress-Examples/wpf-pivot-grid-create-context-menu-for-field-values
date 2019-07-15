@@ -22,7 +22,7 @@ namespace WpfPivotGrid_CustomMenu
         {
             PivotGridFieldValueMenuInfo menuInfo = pivotGrid.GridMenu.MenuInfo as PivotGridFieldValueMenuInfo;
             if (menuInfo != null && menuInfo.FieldValueElementData != null &&
-                menuInfo.FieldValueElementData.Value.ToString() != string.Empty)
+                menuInfo.FieldValueElementData.Value != null)
             {
                 Clipboard.SetDataObject(menuInfo.FieldValueElementData.Value);
             }
