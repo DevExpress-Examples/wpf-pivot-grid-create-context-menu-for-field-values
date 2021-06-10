@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainWindow.xaml](./CS/WpfPivotGrid_CustomMenu/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfPivotGrid_CustomMenu/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/WpfPivotGrid_CustomMenu/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfPivotGrid_CustomMenu/MainWindow.xaml.vb))
+<!-- default file list end -->
+
 # How to Customize the Pivot Grid Context Menu
 
 
