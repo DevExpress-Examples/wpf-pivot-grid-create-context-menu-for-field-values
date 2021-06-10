@@ -5,8 +5,7 @@
 * [MainWindow.xaml.cs](./CS/WpfPivotGrid_CustomMenu/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfPivotGrid_CustomMenu/MainWindow.xaml.vb))
 <!-- default file list end -->
 
-# How to Customize the Pivot Grid Context Menu
-
+# WPF Dashboard Viewer - How to Customize the Pivot Grid Context Menu
 
 This example shows how to modify context menu for the Field, Data and Header areas in the PivotGridControl.
 
