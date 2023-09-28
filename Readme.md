@@ -3,14 +3,8 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E2205)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* [MainWindow.xaml](./CS/WpfPivotGrid_CustomMenu/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfPivotGrid_CustomMenu/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/WpfPivotGrid_CustomMenu/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfPivotGrid_CustomMenu/MainWindow.xaml.vb))
-<!-- default file list end -->
-
-# WPF Dashboard Viewer - How to Customize the Pivot Grid Context Menu
+# BI Dashboard for WPF - How to Customize the Pivot Grid Context Menu
 
 This example shows how to modify context menu for the Field, Data and Header areas in the PivotGridControl.
 
@@ -20,6 +14,11 @@ This example shows how to modify context menu for the Field, Data and Header are
 - The [Header Area Context Menu](https://docs.devexpress.com/WPF/8003) is modified to remove all built-in commands and add a drop-down menu with a single item that shows/hides column [grand totals](https://docs.devexpress.com/WPF/8057).
 
 ![screenshot](images/ContextMenu.gif)
+
+## Files to Review
+
+* [MainWindow.xaml](./CS/WpfPivotGrid_CustomMenu/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfPivotGrid_CustomMenu/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/WpfPivotGrid_CustomMenu/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfPivotGrid_CustomMenu/MainWindow.xaml.vb))
 
 ## API
 
