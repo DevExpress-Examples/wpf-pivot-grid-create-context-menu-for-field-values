@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# BI Dashboard for WPF - How to Customize the Pivot Grid Context Menu
+# Piovt Grid for WPF - How to Customize the Pivot Grid Context Menu
 
 This example shows how to modify context menu for the Field, Data and Header areas in the PivotGridControl.
 
