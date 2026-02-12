@@ -38,7 +38,7 @@ This example shows how to modify context menu for the Field, Data and Header are
 
 * [How to Customize the Data Field Menu to Add a Command to Change the Summary Type](https://github.com/DevExpress-Examples/how-to-customize-the-data-field-menu-to-allow-summarytype-and-summarydisplaytype-selection-e20028)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-pivot-grid-create-context-menu-for-field-values&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-pivot-grid-create-context-menu-for-field-values&~~~was_helpful=no)
 
